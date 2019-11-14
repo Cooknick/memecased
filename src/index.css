@@ -63,3 +63,20 @@ input {
   text-align: right;
   color: LimeGreen;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  .App {
+    width: 92%;
+    height: 350px;
+  }
+  .header {
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+  input {
+    width: 100%;
+  }
+}
