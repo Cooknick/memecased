@@ -1,13 +1,65 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin:0% auto;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.appWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.App {
+  margin-top: -40px;
+  width: 500px;
+}
+.header {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input {
+  display: block;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 24px;
+  width: inherit;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.singleCase {
+  margin: 35px 0 0;
+  font-size: 20px;
+}
+.caseResult {
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+  height: 24px;
+}
+.caseOptions {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  color: black;
+  margin-top: 5px;
+}
+.caseName {
+  flex: 1;
+}
+.caseCopy {
+  flex: 1;
+  text-align: right;
+  color: #3670DD;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.caseCopy:hover { 
+  color: goldenrod;
+}
+
+.caseCopied {
+  flex: 1;
+  text-align: right;
+  color: LimeGreen;
 }
