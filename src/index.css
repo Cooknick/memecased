@@ -35,7 +35,9 @@ input {
 .caseResult {
   border-bottom: 1px solid grey;
   padding-bottom: 5px;
-  height: 24px;
+  min-height: 24px;
+  height: auto;
+
 }
 .caseOptions {
   display: flex;
