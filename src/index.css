@@ -25,8 +25,8 @@ input {
   font-size: 24px;
   width: inherit;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 .singleCase {
   margin: 35px 0 0;
@@ -35,7 +35,9 @@ input {
 .caseResult {
   border-bottom: 1px solid grey;
   padding-bottom: 5px;
-  height: 24px;
+  min-height: 24px;
+  height: auto;
+
 }
 .caseOptions {
   display: flex;
@@ -53,13 +55,28 @@ input {
   color: #3670DD;
   cursor: pointer;
 }
-
 .caseCopy:hover { 
   color: goldenrod;
 }
-
 .caseCopied {
   flex: 1;
   text-align: right;
   color: LimeGreen;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  .App {
+    width: 92%;
+    height: 350px;
+  }
+  .header {
+    text-transform: uppercase;
+    font-size: 48px;
+  }
+  input {
+    width: 100%;
+  }
 }
