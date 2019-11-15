@@ -2,13 +2,14 @@ import React, { useState } from "react";
 
 import SingleCase from './components/single-case';
 import Header from './components/header';
-import { clapCase, spongeCase } from './cases';
+import { clapCase, spongeCase, alarmCase } from './cases';
 
 function App() {
   const [phrase, setPhrase] = useState('');
   const [copiedCase, setCopiedCase] = useState({
     clap: false,
     sponge: false,
+    alarm: false,
   });
 
 
@@ -40,6 +41,14 @@ function App() {
             copied={{
               isCopied: copiedCase.sponge,
               setCopied: (value) => setCopiedCase({ sponge: value })
+            }}
+          />
+          <SingleCase
+            caseChanger={() => alarmCase(phrase)}
+            caseName={"Alarm Case"}
+            copied={{
+              isCopied: copiedCase.alarm,
+              setCopied: (value) => setCopiedCase({ alarm: value })
             }}
           />
         </div>

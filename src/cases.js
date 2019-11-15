@@ -1,11 +1,12 @@
-const clapCase = (phrase) => {
+const clapCase = phrase => {
     if (phrase.length === 0) {
         return "";
     }
-    return phrase.replace(/\s/g, " 👏 ") + " 👏";
+    // phrase.toUpperCase();
+    return phrase.toUpperCase().replace(/\s/g, " 👏 ") + " 👏";
 }
 
-const spongeCase = (phrase) => {
+const spongeCase = phrase => {
     let charArray = [];
 
     if (phrase.length === 0) {
@@ -23,4 +24,11 @@ const spongeCase = (phrase) => {
     return charArray.join('');
 }
 
-export { spongeCase, clapCase };
+const alarmCase = phrase => {
+    if (phrase.length === 0) {
+        return "";
+    }
+    return `🚨 ${phrase.toUpperCase()}! 🚨`;
+}
+
+export { spongeCase, clapCase, alarmCase };

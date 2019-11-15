@@ -6,6 +6,10 @@ const SingleCase = ({ caseChanger, caseName, copied }) => {
 
     const resultText = caseChanger();
 
+    useEffect(() => {
+        setCopied(false)
+    }, [resultText])
+
     return (
         <div className="singleCase">
 
