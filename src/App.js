@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="appWrapper">
       <div className="App" style={{ textAlign: "left" }}>
-        {/* <Header /> */}
+        <Header />
         <input
           type="text"
           onChange={event => changePhrase(event)}
@@ -35,7 +35,7 @@ function App() {
               setCopied: (value) => setCopiedCase({ clap: value })
             }}
           />
-          {/* <SingleCase
+          <SingleCase
             caseChanger={() => spongeCase(phrase)}
             caseName={"Sponge Case"}
             copied={{
@@ -50,7 +50,7 @@ function App() {
               isCopied: copiedCase.alarm,
               setCopied: (value) => setCopiedCase({ alarm: value })
             }}
-          /> */}
+          />
         </div>
       </div>
     </div>
