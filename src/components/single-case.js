@@ -22,7 +22,7 @@ const SingleCase = ({ caseChanger, caseName, copied }) => {
                     {caseName}
                 </div>
 
-                {resultText && isCopied &&
+                {/* {resultText && isCopied &&
                     <div className="caseCopied">
                         Copid ✅
                     </div>}
@@ -32,7 +32,7 @@ const SingleCase = ({ caseChanger, caseName, copied }) => {
                         <CopyToClipboard text={resultText} onCopy={() => { setCopied(!isCopied) }}>
                             <span>Copy</span>
                         </CopyToClipboard>
-                    </div>}
+                    </div>} */}
 
             </div>
         </div >
