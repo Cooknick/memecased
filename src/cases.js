@@ -15,7 +15,7 @@ const spongeCase = phrase => {
 
     for (let i = 0; phrase.length > i; i++) {
         let singleChar = phrase.charAt(i);
-        if (i % 2 != 0) {
+        if (i % 2 !== 0) {
             charArray.push(singleChar.toUpperCase());
         } else {
             charArray.push(singleChar);

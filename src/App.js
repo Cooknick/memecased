@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import SingleCase from './components/single-case';
 import Header from './components/header';
+import Footer from './components/footer';
 import { clapCase, spongeCase, alarmCase } from './cases';
 
 function App() {
@@ -11,7 +12,6 @@ function App() {
     sponge: false,
     alarm: false,
   });
-
 
   const changePhrase = e => {
     setPhrase(e.target.value);
@@ -52,6 +52,7 @@ function App() {
             }}
           />
         </div>
+        <Footer />
       </div>
     </div>
   );
