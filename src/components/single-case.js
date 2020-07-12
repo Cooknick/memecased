@@ -24,7 +24,7 @@ const SingleCase = ({ caseChanger, caseName, copied }) => {
 
                 {resultText && isCopied &&
                     <div className="caseCopied">
-                        Copid ✅
+                        Copid <span role="img">✅</span>
                     </div>}
 
                 {resultText && !isCopied &&
